@@ -13,3 +13,172 @@
  *= require_tree .
  *= require_self
  */
+ * {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.side-table {
+    background-color: #253141;
+    width:300px;
+    height: 100vh;
+}
+
+.main-table {
+    background-color: #ffffff;
+    width:calc(100vw - 300px);
+}
+
+.title-table {
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.user-name {
+    font-size: 16px;
+    color:#FAFAFA
+}
+
+.btn {
+    border:1px solid lightblue;
+    padding: 14px;
+}
+
+.btn a {
+    font-size: 10px;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.chat-list {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0 20px;
+    overflow: scroll;
+}
+
+.room {
+    margin-bottom: 40px;
+}
+
+.room a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.chat-title {
+    height: 100px;
+    background-color: #ffffff;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.room-name {
+    font-size: 24px;
+    color: #333;
+    margin-top: 36px;
+}
+
+.end-btn {
+    margin-top: 16px;
+    padding: 20px;
+    border: 1px solid darkred;
+}
+
+.end-btn a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.chat-text {
+    height: calc(100vh - 100px - 90px);
+    background-color: #FAFAFA;
+    padding: 46px 40px 0 40px;
+    overflow: scroll;
+}
+
+.chat {
+    margin-bottom: 40px;
+}
+
+.user-deta {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user {
+    font-size: 16px;
+    color: #434A54;
+    margin-right: 10px;
+}
+
+.deta {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment {
+    font-size: 14px;
+    color: #434A54;
+}
+
+form {
+    height: 90px;
+    background-color: #DDDDDD;
+    padding: 20px 40px;
+}
+
+.comment-form {
+    display: flex;
+}
+
+input {
+    width:100%;
+    height: 50px;
+}
+
+.writing-place{
+    width: 100%;
+    margin-right: 15px;
+    display: flex;
+    background-color: white;
+}
+
+.writing-place input {
+    padding-left: 10px;
+    border: none;
+
+}
+
+
+.submit input {
+    background-color: #38AEF0;
+    padding: 0 20px;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.form-image {
+    font-size: 12px;
+    background-color: lightblue;
+    color: white;
+    padding: 12px;
+    width: 60px;
+    margin: 5px 10px;
+    text-align: center;
+}
+  
+.hidden {
+    display: none;
+}
