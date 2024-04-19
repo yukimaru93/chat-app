@@ -25,39 +25,69 @@
     background-color: #253141;
     width:300px;
     height: 100vh;
-    padding: 0 20px;
 }
 
 .main-table {
     background-color: #ffffff;
     width:calc(100vw - 300px);
-    padding: 0 40px;
 }
 
 .title-table {
     height: 100px;
     background-color: #253141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.user-name {
+    font-size: 16px;
+    color:#FAFAFA
+}
+
+.btn {
+    border:1px solid lightblue;
+    padding: 14px;
+}
+
+.btn a {
+    font-size: 10px;
+    color: deepskyblue;
+    text-decoration: none;
 }
 
 .chat-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 20px 20px 0 20px;
+    overflow: scroll;
+}
+
+.room {
+    margin-bottom: 40px;
+}
+
+.room a {
+    text-decoration: none;
+    color: white;
+
 }
 
 .chat-title {
     height: 100px;
     background-color: #ffffff;
+    padding: 0 40px;
 }
 
 .chat-text {
     height: calc(100vh - 100px - 90px);
     background-color: #FAFAFA;
-    padding-top: 46px;
+    padding: 46px 40px 0 40px;
 }
 
 form {
     height: 90px;
     background-color: #DDDDDD;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
