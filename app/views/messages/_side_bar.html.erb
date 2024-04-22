@@ -1,15 +1,14 @@
 <div class=title-table>
     <div class=user-name><%= link_to current_user.name, edit_user_path(current_user) %></div>
     <div class=btn>
-        <a href="#" >チャットを作成する</a>
+        <%= link_to 'チャットを作成する', new_room_path %>
     </div>
 </div>
 
 <div class=chat-list>
-    <div class=room>
-        <a href="#">origin-1</a>
-    </div>
-    <div class=room>
-        <a href="#">origin-2</a>
-    </div>
+    <% current_user.rooms.each do |room| %>
+        <div class=room>
+            <a href="#"><%= room.name %></a>
+        </div>
+    <% end %>
 </div>
